@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Calculadora</title>
+	<meta name="description" content="Calculadora para realizar operaciones matematicas">
+	<meta name="author"content="Enrique Monterde">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="icons8-calculator-96.png">
+	<script src="script.js"></script>
+</head>
+	<body>
+	<div name="calculadora" class="calculadora">
+		<div name="pantalla" class="pantalla"></div>
+		<div name="teclado" class="teclado">
+			<div name="filaUno" class="fila">
+				<div name="abrirParentesis" class="botonOperacion" onclick="botonPorPantalla('(')">(</div>
+				<div name="cerrarParentesis" class="botonOperacion" onclick="botonPorPantalla(')')">)</div>
+				<div name="porcentaje" class="botonOperacion" onclick="botonPorPantalla('%')">%</div>
+				<div name="CE" class="botonOperacion" onclick="botonPorPantalla('CE')">CE</div>
+			</div>
+			<div name="filaDos" class="fila">
+				<div name="siete" class="boton" onclick="botonPorPantalla(7)">7</div>
+				<div name="ocho" class="boton" onclick="botonPorPantalla(8)">8</div>
+				<div name="nueve" class="boton" onclick="botonPorPantalla(9)">9</div>
+				<div name="dividir" class="botonOperacion" onclick="botonPorPantalla('÷')">÷</div>
+			</div>
+			<div name="filaTres" class="fila">
+				<div name="cuatro" class="boton" onclick="botonPorPantalla(4)">4</div>
+				<div name="cinco" class="boton" onclick="botonPorPantalla(5)">5</div>
+				<div name="seis" class="boton" onclick="botonPorPantalla(6)">6</div>
+				<div name="multiplicar" class="botonOperacion" onclick="botonPorPantalla('×')">×</div>
+			</div>
+			<div name="filaCuatro" class="fila">
+				<div name="uno" class="boton" onclick="botonPorPantalla(1)">1</div>
+				<div name="dos" class="boton" onclick="botonPorPantalla(2)">2</div>
+				<div name="tres" class="boton" onclick="botonPorPantalla(3)">3</div>
+				<div name="restar" class="botonOperacion" onclick="botonPorPantalla('-')">-</div>
+			</div>
+			<div name="filaCinco" class="fila">
+				<div name="cero" class="boton" onclick="botonPorPantalla(0)">0</div>
+				<div name="punto" class="botonOperacion" onclick="botonPorPantalla('.')">.</div>
+				<div name="resultado" class="botonOperacion" onclick="botonResultado()">=</div>
+				<div name="sumar" class="botonOperacion" onclick="botonPorPantalla('+')">+</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
